@@ -1,0 +1,8 @@
+puts "This is a test!"
+
+require_relative '../lib/covid_tracker/cli.rb'
+
+CLI.new.run
+
+require_relative '../lib/country.rb'
+

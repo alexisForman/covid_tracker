@@ -1,0 +1,3 @@
+class State < Country
+
+end
