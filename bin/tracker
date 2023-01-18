@@ -1,8 +1,6 @@
-puts "This is a test!"
+require_relative '../lib/cli.rb'
 
-require_relative '../lib/covid_tracker/cli.rb'
+CLI.new.sign_up
 
-CLI.new.run
 
-require_relative '../lib/country.rb'
 

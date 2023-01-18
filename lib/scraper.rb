@@ -16,7 +16,7 @@ class Scraper
 
         Country.new("USA", usa_confirmed_cases, usa_overall_deaths, usa_recoveries)
 
-        binding.pry #this is like a console log
+        #binding.pry #this is like a console log
     end
 
     def self.scrape_states
@@ -24,4 +24,4 @@ class Scraper
     end
 end
 
-binding.pry
+#binding.pry
