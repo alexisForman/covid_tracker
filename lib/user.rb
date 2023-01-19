@@ -1,4 +1,3 @@
-require 'pry'
 require_relative './auth.rb'
 
 class User

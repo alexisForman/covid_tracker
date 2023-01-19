@@ -1,6 +1,10 @@
+require_relative './user.rb'
+require_relative './auth.rb'
+
 class CLI
+    extend Auth
     def run
-        @User.seed
+        User.seed
         system("clear")
         greeting
         login_or_signup
@@ -43,7 +47,7 @@ class CLI
             puts "> What is your password?"
             password = gets.chomp
 
-            if ::Auth.authenticate_user(::User.all, username, password)
+            if Auth.authenticate_user(User.all, username, password)
                 puts "login successful!"
                 authenticated = true
             else
